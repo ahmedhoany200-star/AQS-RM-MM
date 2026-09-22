@@ -1,0 +1,10 @@
+# AQS Rolling Mill — private internal tool.
+# Crawling is deliberately ALLOWED so that:
+#   1. search engines can read the "noindex" tag in the page and drop it from results, and
+#   2. WhatsApp / Teams / Outlook can still fetch the link-preview card.
+# A blanket "Disallow: /" would block both, and the bare URL could still be listed.
+
+User-agent: *
+Allow: /
+
+# no sitemap on purpose — nothing here should be indexed
