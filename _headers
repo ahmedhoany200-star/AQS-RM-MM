@@ -6,3 +6,22 @@
   Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains
   X-Robots-Tag: noindex, nofollow
+
+/sw.js
+  Cache-Control: no-cache
+  Service-Worker-Allowed: /
+
+/manifest.webmanifest
+  Content-Type: application/manifest+json
+  Cache-Control: no-cache
+
+/index.html
+  Cache-Control: no-cache
+
+/data-*
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: application/octet-stream
+
+/assets-*
+  Cache-Control: public, max-age=31536000, immutable
+  Content-Type: application/octet-stream
